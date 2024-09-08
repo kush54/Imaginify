@@ -10,11 +10,11 @@ import { getUserById } from "@/lib/actions/user.actions";
 import Checkout from "@/components/shared/Checkout";
 const Credits = async () => {
   const { userId } = auth();
-
+  console.log(userId)
   if (!userId) redirect("/sign-in");
 
   const user = await getUserById(userId);
-
+  console.log(user)
   return (
     <>
       <Header

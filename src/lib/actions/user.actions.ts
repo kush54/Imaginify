@@ -8,7 +8,6 @@ import { handleError } from "../utils";
 
 // CREATE
 export async function createUser(user: CreateUserParams) {
-    
   try {
     await connectToDatabase();
 
@@ -22,8 +21,6 @@ export async function createUser(user: CreateUserParams) {
 
 // READ
 export async function getUserById(userId: string) {
-  console.log(userId,"here","user_2lkDDrOkmNjEmOIrDzZI7VT49EG")
-  userId = "user_2lkDDrOkmNjEmOIrDzZI7VT49EG"
   try {
     await connectToDatabase();
 

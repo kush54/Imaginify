@@ -98,6 +98,8 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
       </section>
     </>
   );
+
+  
 };
 
 export default ImageDetails;
